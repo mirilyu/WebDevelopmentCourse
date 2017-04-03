@@ -1,0 +1,102 @@
+﻿body 
+{
+    font-size: 14px;
+}
+#shapka{
+    background-color: white;
+    width: 1170px;
+    position:fixed;
+    top: 0px;
+}
+
+.italic{
+    font-style: italic;
+    color:fuchsia;
+}
+#skills{
+    list-style-type: circle;
+}
+h3 {
+    margin-top: 1.5%;
+    font-size: 1.25rem;
+}
+h1 {
+    font-size: 2.5rem;
+    margin: 1% 0;
+}
+h2 {
+    font-size: 2rem;
+    margin: 5% 0;
+}
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+.row {
+    margin-bottom: 5%;
+    margin-top: 7%;
+}
+
+.row:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.column {
+    box-sizing: border-box;
+    float: left;
+}
+.column p, ul {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+.half {
+    width: 50%;
+}
+
+.img-wrapper {
+    width: 80%;
+    height: 600px;
+    background-color: cornflowerblue;
+    background-size: cover;
+}
+.img-wrapper.img_1 {
+    background-image: url('../img/img_1_before.jpg');
+}
+.img-wrapper.img_1:hover {
+    background-image: url('../img/img_1_after.jpg');
+}
+.img-wrapper.img_2 {
+    float: right;
+    background-image: url('../img/img_2_before.jpg');
+}
+.img-wrapper.img_2:hover {
+    background-image: url('../img/img_2_after.jpg');
+}
+#niceSpan{
+    text-decoration:line-through;
+    color: fuchsia;
+}
+footer {
+    text-align: center;
+    height: 100px;
+    background: #202020;
+}
+footer > span{
+    color:#f2f2f2;
+    text-align:center;
+    margin-top: 1%;
+    display: inline-block;
+}
+footer .fa {
+    margin-top: 20px;
+    font-size: 2.25rem;
+    color: #f2f2f2;
+}
+footer .fa:nth-of-type(2) {
+    margin: 0 5%;   
+}
+
+a:hover {
+    color: fuchsia;
+}
