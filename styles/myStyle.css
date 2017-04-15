@@ -2,13 +2,31 @@
 {
     font-size: 14px;
 }
-#shapka{
+nav {
+    height: 72px;
+    -webkit-box-shadow: 0 0 4px 2px rgba(0,0,0,0.3);
+    box-shadow: 0 0 4px 2px rgba(0,0,0,0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-color: white;
-    width: 1170px;
-    position:fixed;
-    top: 0px;
 }
 
+nav li {
+    display: inline-block;
+    line-height: 72px;
+}
+nav b {
+    margin: 0 1%;
+}
+nav a {
+    color: black;
+    text-decoration: none;
+}
+nav .current {
+    font-weight: bold;
+}
 .italic{
     font-style: italic;
     color:fuchsia;
@@ -34,9 +52,10 @@ h2 {
 }
 .row {
     margin-bottom: 5%;
-    margin-top: 7%;
 }
-
+.view-start {
+    margin-top: 94px;
+}
 .row:after {
     content: "";
     clear: both;
@@ -57,21 +76,21 @@ h2 {
 .img-wrapper {
     width: 80%;
     height: 600px;
-    background-color: cornflowerblue;
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../img/sprite.jpg');
 }
 .img-wrapper.img_1 {
-    background-image: url('../img/img_1_before.jpg');
+    background-position: -500px -0px;
 }
 .img-wrapper.img_1:hover {
-    background-image: url('../img/img_1_after.jpg');
+    background-position: -0px -0px;
 }
 .img-wrapper.img_2 {
     float: right;
-    background-image: url('../img/img_2_before.jpg');
+    background-position: -500px -667px;
 }
 .img-wrapper.img_2:hover {
-    background-image: url('../img/img_2_after.jpg');
+    background-position: -0px -667px;
 }
 #niceSpan{
     text-decoration:line-through;
@@ -81,6 +100,7 @@ footer {
     text-align: center;
     height: 100px;
     background: #202020;
+    width: 100%;
 }
 footer > span{
     color:#f2f2f2;
@@ -99,4 +119,14 @@ footer .fa:nth-of-type(2) {
 
 a:hover {
     color: fuchsia;
+}
+
+.page-content {
+    width: 50%;
+    margin: 0 auto;
+}
+.page-content .content-paragraph {
+    line-height: 1.65rem;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
 }
